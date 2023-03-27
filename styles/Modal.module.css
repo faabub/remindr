@@ -1,0 +1,45 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    background-color: black;
+    border: 0.3px solid #eaeaea;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    z-index: 10000;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.modalHeader h2 {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.modalClose {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    transition: 0.15s ease;
+}
+
+.modalClose:hover {
+    color:#DC143C;
+}
